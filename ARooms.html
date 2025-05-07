@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="css/ARooms.css">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ARooms.html" class="active">ROOMS</a></li>
+            <li><a href="Ameneties.html">AMENETIES</a></li>
+            
+        </ul>
+    </nav>
+
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      </script>
+
+    <div class="intro">
+        <img class="bg-image" src="villa1c.jpg" alt="Background Image">
+        <h1>Our Luxury Rooms</h1>
+        <p>Experience unparalleled comfort and elegance in our thoughtfully designed accommodations, where every detail has been crafted for your perfect stay.</p>
+    </div>
+
+    <nav class="navbar2">
+        <ul class="nav-links2">
+            <li><a href="ARooms.html" class="active">All</a></li>
+            <li><a href="CRooms.html" >Cottages</a></li>
+            <li><a href="RRooms.html">Rooms</a></li>
+            <li><a href="VRooms.html">Villa</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <img src="gazebo.jpg" alt="Gazebo Cottage" />
+            <h2>Gazebo Cottage</h2>
+            <p>👤 10 - 15 Guests</p>
+
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                
+            </ul>
+            <p class="price">Php 600</p>
+            <p>/Cottage</p>
+        </div>
+        
+        <div class="card">
+            <img src="train.jpg" alt="Train Cottage" />
+            <h2>Train Cottage</h2>
+            <p>👤 25 - 35 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                
+            </ul>
+            <p class="price">Php 1500</p>
+            <p>/Cottage</p>
+        </div>
+        
+        <div class="card">
+            <img src="salakot.jpg" alt="salakot Cottage" />
+            <h2>Salakot Cottage</h2>
+            <p>👤 15 - 20 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                
+            </ul>
+            <p class="price">Php 1000</p>
+            <p>/Cottage</p>
+        </div>
+
+        <div class="card">
+            <img src="mushroom.jpg" alt="Mushroom Cottage" />
+            <h2>Mushroom Cottage</h2>
+            <p>👤 5 - 10 Guests</p>
+            
+            <h3>Cottage Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                
+            </ul>
+            <p class="price">Php 500</p>
+            <p>/Cottage</p>
+        </div>
+
+        <div class="card">
+                <img src="treehouse.jpg" alt="Tree house Cottage" />
+                <h2>Tree house Cottage</h2>
+                <p>👤 5 - 10 Guests</p>
+                
+                <h3>Room Amenities</h3>
+                <ul>
+                    <li>Access to all public pools</li>
+                    
+                </ul>
+                <p class="price">Php 600</p>
+                <p>/Cottage</p>
+        </div>
+
+        
+
+        <div class="card">
+            <img src="cabin.jpg" alt="Cabin Cottage" />
+            <h2>Cabin Cottage</h2>
+            <p>👤 15 - 20 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                
+            </ul>
+            <p class="price">Php 800</p>
+            <p>/Cottage</p>
+        </div>
+
+        
+
+        <div class="card">
+            <img src="minitrain.jpg" alt="Mini Train Cottage" />
+            <h2>Mini Train Cottage</h2>
+            <p>👤 20 - 30 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                
+            </ul>
+            <p class="price">Php 1000</p>
+            <p>/Cottage</p>
+        </div>
+
+        
+
+        <div class="card">
+            <img src="regular.jpg" alt="Regular Room" />
+            <h2>Regular Room</h2>
+            <p>👤 4 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                <li>Beds</li>
+                <li>Airconditioned</li>
+                
+            </ul>
+            <p class="price">Php 2500</p>
+            <p>/night</p>
+        </div>
+
+        <div class="card">
+            <img src="family.jpg" alt="Family Room" />
+            <h2>Family Room</h2>
+            <p>👤 10 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                <li>Beds</li>
+                <li>Airconditioned</li>
+                
+            </ul>
+            <p class="price">Php 3500</p>
+            <p>/night</p>
+        </div>
+
+        <div class="card">
+            <img src="villaA.jpg" alt="Villa A&B" />
+            <h2>Villa A&B (Bungalow)</h2>
+            <p>👤 10 - 15 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                <li>Beds</li>
+                <li>Airconditioned</li>
+                <li>Kitchen</li>
+                <li>Tv</li>
+                <li>Own Pool & Slide</li>
+                <li>Mini Function Hall</li>
+                
+            </ul>
+            <p class="price">Php 8000</p>
+            <p>/night</p>
+        </div>
+
+        <div class="card">
+            <img src="villaC.jpg" alt="Villa C" />
+            <h2>Villa C (2 Storey)</h2>
+            <p>👤 10 - 25 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                <li>Beds</li>
+                <li>Airconditioned</li>
+                <li>Kitchen</li>
+                <li>Tv</li>
+                <li>Own Pool & Slide</li>
+                <li>Mini Function Hall</li>
+                
+            </ul>
+            <p class="price">Php 12000</p>
+            <p>/night</p>
+        </div>
+
+        <div class="card">
+            <img src="villaD.jpg" alt="Villa D" />
+            <h2>Villa D (2 Storey)</h2>
+            <p>👤 10 - 25 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                <li>Beds</li>
+                <li>Airconditioned</li>
+                <li>Kitchen</li>
+                <li>Tv</li>
+                <li>Own Pool & Slide</li>
+                <li>Mini Function Hall</li>
+                
+            </ul>
+            <p class="price">Php 12000</p>
+            <p>/night</p>
+        </div>
+
+        
+
+    
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            
+            <div class="footer-top1">
+                
+                <ul class="nav-footer">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="RRooms.html" >Rooms</a></li>
+                    <li><a href="Ameneties.html">Amenities</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-top2">
+                <a href="https://www.facebook.com/gemwelladventureresort" target="_blank"><img src="facebook.png" alt="facebook" ></a>
+                <a href="https://www.instagram.com/gemwelladventureresort/" target="_blank"><img src="instagram.png" alt="instagram" ></a>
+            </div>
+        </div>
+
+        <div class="footer-middle">________________________________________________________________________________________________________________________________________________</div>
+        
+        <div class="footer-bottom">
+            <p>Copyright © 2025 Gemwell Adventure Resort. All rights reserved.
+            </p>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

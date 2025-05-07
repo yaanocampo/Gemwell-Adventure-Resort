@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenities</title>
+    <link rel="stylesheet" href="css/Ameneties.css">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"></a>HOME</a></li>
+            <li><a href="ARooms.html" >ROOMS</a></li>
+            <li><a href="Ameneties.html" class="active">AMENETIES</a></li>
+            
+        </ul>
+    </nav>
+
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      </script>
+
+    <div class="intro">
+        <img class="bg-image" src="Slide1.jpg" alt="Background Image">
+
+        <h1>Your Advenure Awaits At Gemwell</h1>
+        <p>Welcome to your ultimate escape — where thrill-seeking teens and fun-loving families come together! Splash into our refreshing pools, race down twisting slides, saddle up for scenic horseback rides, and dance the night away to live weekend beats. Every moment is an adventure waiting to happen!</p>
+    </div>
+
+    <div class="container-pool">
+        <div class="content">
+            <h1>Dive into Refreshing Fun at Our Swimming Pool</h1>
+            <p>
+                Escape the heat and unwind in our crystal-clear swimming pool. 
+                Perfect for families and individuals alike, our pool offers 
+                designated hours for various age groups. Enjoy a safe and 
+                relaxing environment with our attentive lifeguards.
+            </p>
+            <ul>
+                <li>🌀 Crystal-clear water for a refreshing experience</li>
+                <li>👪 Designated family and adult-only swim times</li>
+                <li>👮 Lifeguards on duty for your safety</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="pool.jpg" alt="Swimming Pool" />
+        </div>
+    </div>
+
+    <div class="adventure">
+
+        <div class="adventure-content">
+            <h1>WATER ADVENTURE</h1>
+            <h2>Experience the Thrill</h2>
+            <p>
+                Dive into excitement with Gemwell Resort exhilarating water slides! Feel the rush as you zoom down our slides, each designed for maximum fun and safety. 
+                With varying heights and speeds, there’s a slide for every thrill-seeker. 
+                Get ready for an unforgettable aquatic adventure!
+            </p>
+
+            <ul>
+                <li>💦 Multiple high-speed water slides for all thrill levels</li>
+                <li>👶 Kiddie slides and splash zones for safe, family-friendly fun</li>
+                <li>👮 Lifeguard-monitored pools for a secure experience</li>
+                <li>🌴 Shaded lounge areas to relax after every splash</li>
+                <li>📸 Perfect spots for action-packed selfies and group shots</li>
+            </ul>
+
+        </div>
+
+        <div class="water-slide-container">
+            <img src="Slide1.jpg" alt="Water slide 1" >
+            <img src="slide.jpg" alt="Water slides" >
+        </div>
+
+    </div>
+
+    <div class="playground">
+        <div class="text-content">
+            <h1>A Safe and Fun Playground for Your Children</h1>
+            <p>Our playground is designed to provide a safe and stimulating environment for children of all ages. With a variety of play structures and soft landing surfaces, parents can relax knowing their kids are playing in a secure space. We prioritize safety and fun!</p>
+            <ul>
+                <li>🌼 Safe, soft landing surfaces</li>
+                <li>🌈 Age-appropriate play structures</li>
+                <li>🍀 Encourages physical activity</li>
+            </ul>
+        </div>
+        <div class="image-content">
+            <img src="playground.jpg" alt="Playground Image">
+        </div>
+    </div>
+
+    <div class="horse">
+
+        <div class="horse-content">
+            <div class="horse-header">
+                <p>EXPLORE NATURE</p>
+                <h1>Horseback Riding Adventure</h1>
+            </div>
+            <p>Saddle up for an unforgettable journey through Gemwell scenic trails. Our horseback riding experiences cater to all skill levels, from beginners to seasoned riders. Enjoy the tranquility of nature as you explore the beautiful landscapes. Our experienced guides ensure a safe and enjoyable adventure for everyone. For only Php 600.</p>
+
+        </div>
+
+    </div>
+
+    <div class="horse-image">
+        <img src="horse1.jpg" alt="Horseback Riding" />
+        <img src="horse2.jpg" alt="Horseback Riding" />
+
+    </div>
+
+    <div class="function">
+        <div class="function-image"><img src="function.jpg" alt="Function Hall" /></div>
+        <div class="function-text">
+            <h1>Host Unforgettable Events in Our Versatile Function Hall</h1>
+            <p>Our function hall at Gemwell Adventure Resort is the perfect venue for your next special event. With a capacity to comfortably accommodate max 100 guests, it’s ideal for weddings, corporate retreats, and family celebrations. We provide customizable layouts and modern amenities to ensure your event is a success. Let us help you create lasting memories.</p>
+            <ul>
+                <li>Function Hall accommodating up to 100 guests</li>
+                <li>Customizable layouts for various event types</li>
+                <li>Modern audio-visual equipment available</li>
+                <li>Dedicated event support staff</li>
+                <li>Catering services available upon request</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="band">
+
+        <div class="band-content">
+            <div class="band-header">
+                <p>WEEKEND VIBES</p>
+                <h1>Unwind with Live Music</h1>
+            </div>
+            <p>Experience the rhythm and beats of our weekend live band performances. We feature a variety of music genres to suit every taste. It’s the perfect way to unwind after a day of excitement and leisure. Join us for a vibrant atmosphere and unforgettable nights.</p>
+
+        </div>
+
+    </div>
+
+    <div class="band-image">
+
+        <img src="band.jpg" alt="Horseback Riding" />
+        
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            
+            <div class="footer-top1">
+                
+                <ul class="nav-footer">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ARooms.html" >Rooms</a></li>
+                    <li><a href="Ameneties.html">Amenities</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-top2">
+                <a href="https://www.facebook.com/gemwelladventureresort" target="_blank"><img src="facebook.png" alt="facebook" ></a>
+                <a href="https://www.instagram.com/gemwelladventureresort/" target="_blank"><img src="instagram.png" alt="instagram" ></a>
+            </div>
+        </div>
+
+        <div class="footer-middle">________________________________________________________________________________________________________________________________________________</div>
+        
+        <div class="footer-bottom">
+            <p>Copyright © 2025 Gemwell Adventure Resort. All rights reserved.
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+</body>
+</html>

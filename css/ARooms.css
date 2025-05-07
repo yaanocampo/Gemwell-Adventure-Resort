@@ -1,0 +1,393 @@
+@import url(https://db.onlinewebfonts.com/c/1c587cd97662ab09cb8ba96867f212e7?family=DINOT-Regular);
+body {
+    margin: 0;
+    padding: 0;
+    height: auto; /* Ensures the body and html fill the viewport */
+    overflow-x: hidden;/* Prevents unnecessary scrolling */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    width: 100%;
+    position: static; 
+    
+    height: 20px; /* Set a fixed height for the navbar */
+}
+
+.logo img {
+    height: 60px;
+    width: 60px; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center; /* Center the nav links */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between links */
+    font-family: "DINOT-REGULAR";
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6347ff; /* Change color on hover */
+
+}
+
+.nav-links a.active {
+    font-weight: bold; /* Make it bold */
+     /* Optional: Add an underline */
+    color: #6347ff;
+    transform: scale(1.50); /* slight zoom effect on hover */
+    transition: transform 0.3s; /* Active link color */
+}
+
+.intro {
+    display: flex;
+    
+    height: 250px;
+    margin: unset;
+    padding-right: 20px;
+    padding-left: 40px;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    z-index: -1; /* send it behind the text */
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.intro p {
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;  
+    margin: 0 20px 20px 0;
+    font-family: "DINOT-Regular";
+}
+
+.navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    width: 100%;
+    height: 20px; 
+     /* Optional: Add a border */
+}
+
+.nav-links2 {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+     /* Center the nav links */
+     /* Set a fixed width for the navbar */
+     ;
+}
+
+.nav-links2 li {
+    margin: 0 15px; 
+    /* border: 1px solid #949494;
+    border-radius: 70px;/* Space between links */
+    
+    /* width: 50px; */ 
+     /* Add some padding for better spacing */
+     text-align: center;
+}
+
+.nav-links2 a {
+    display: flex; /* Use flexbox for consistent alignment */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 10px;
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+    width: 80px; /* Fixed width for all links */
+    height: 20px; /* Fixed height for all links */
+    border: 1px solid #949494;
+    border-radius: 70px; /* Rounded corners */
+    text-align: center;
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    padding: 0; /* Remove extra padding */
+}
+
+.nav-links2 a.active {
+    color: #ffffff; /* Highlight the active link */
+    background-color: #949494; /* Add background color */
+    font-weight: bold; /* Make it bold */
+    
+    border-radius: 70px; /* Match the hover style */
+    padding: 2px 5px; /* Add padding for better spacing */
+}
+
+.nav-links2 li.active {
+    color: #ffffff;
+    background-color: #949494; 
+    
+
+}
+
+.nav-links2 a:hover {
+
+    color: #ffffff; /* Change color on hover */
+    background-color: #949494;
+    transform: scale(1.10); /* slight zoom effect on hover */
+    transition: transform 0.4s; /* Active link color */
+    box-shadow: 6px 4px 6px rgba(0,0,0,0.42);
+
+}
+
+.card img:active {
+    transform: scale(1.5); /* Slight zoom effect on hover */
+    transition: transform 0.5s; /* Smooth transition */
+}
+
+.container {
+    display: flex; /* Enables Flexbox */
+    flex-wrap: wrap; /* Allows cards to wrap to the next row if needed */
+    justify-content: center; /* Adds space between cards */
+    gap: 20px; /* Adds consistent spacing between cards */
+    padding: 20px; /* Optional: Adds padding inside the container */
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.card {
+    background: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    margin: 15px; /* Spacing between cards */
+    padding: 20px; /* Padding inside cards */
+    flex: 1; /* Allow cards to grow */
+    min-width: 250px; /* Minimum width for cards */
+    max-width: 250px; /* Fixed max width for cards */
+    text-align: left; /* Center text inside cards */
+}
+
+.card h2, .card p, .card h3, .card li {
+    margin: 10px 0; /* Spacing between elements inside cards */
+    font-family: "DINOT-Regular"; /* Font for card text */
+    
+}
+
+.card img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px 10px 0 0; /* Rounded corners for images */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-weight: bold; /* Make price stand out */
+    font-size: 1.5em; /* Increase font size */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: transform 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.footer{
+
+    display: flex;
+    background-color: #021e38;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.footer-top{
+    display: flex;
+   background-color: #021e38;
+   height: 80px;
+   width: 100%;
+    align-items: center;
+    
+    justify-content: space-around;
+}
+
+.footer-top1{
+    background-color:#021e38;
+    height: 60px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-top2{
+    background-color: #021e38;
+    height: 60px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.footer-bottom{
+    display: flex;
+    background-color:#021e38;
+    height: 80px;
+    width: 1230px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .footer-bottom p{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    
+ }
+
+
+
+
+
+.nav-footer {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-footer li {
+    margin: 0 20px; 
+}
+
+.nav-footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-footer a:hover {
+    text-decoration: underline; 
+
+}
+
+.footer-middle{
+    color: white;
+}
+
+.footer-top2 img{
+    height: 30px;
+    width: 30px; 
+    padding: 20px;
+    
+}
+
+@media (max-width: 768px) {
+    html ,body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        width: 100%; /* Ensure the body does not exceed the viewport width */
+         /* Include padding and borders in width calculations */
+    }
+    
+    .navbar, .navbar2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-links2 a{
+        width: 70px;
+
+    }
+
+    .nav-links2 li {
+        margin: 0 5px; /* Space between links */
+        font-family: "DINOT-REGULAR";
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+      }
+    
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        
+    }
+
+    .nav-links2 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 13px;
+    }
+
+    .card {
+        width: 150px;
+        min-width: 150px; /* Minimum width for cards */
+         /* Fixed max width for cards */
+    }
+
+    .footer-top1, .footer-top2 {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .nav-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

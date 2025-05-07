@@ -1,0 +1,448 @@
+@import url(https://db.onlinewebfonts.com/c/1c587cd97662ab09cb8ba96867f212e7?family=DINOT-Regular);
+@import url(https://db.onlinewebfonts.com/c/0d4bd6300a54d19c5fc62fe7e07c48cb?family=Anton);
+body {
+    margin: 0;
+    padding: 0;
+    height: 1600px; /* Ensures the body and html fill the viewport */
+    overflow-x: hidden;/* Prevents unnecessary scrolling */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    width: 100%;
+    position: static; 
+    
+    height: 20px; /* Set a fixed height for the navbar */
+}
+
+.logo img {
+    height: 60px;
+    width: 60px; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+    font-family: "DINOT-REGULAR"; /* Center the nav links */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6347ff; /* Change color on hover */
+
+}
+
+.nav-links a.active {
+    font-weight: bold; /* Make it bold */
+    
+    color: #6347ff; /* Active link color */
+    transform: scale(1.50); /* slight zoom effect on hover */
+    transition: transform 0.3s;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh ; 
+    
+    background-size: cover ; 
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* send it behind the text */
+}
+
+
+.container h1 {
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 6px 4px 6px rgba(0,0,0,0.42);
+    font-family: "Anton";
+    font-size: 80px;
+    letter-spacing: 0.2px;
+    word-spacing: 2.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0%;
+}
+
+.container h1:hover {
+    transform: scale(1.05); /* slight zoom effect on hover */
+    transition: transform 0.3s;
+    text-shadow: 6px 4px 6px rgba(0,0,0,0.42);
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+    
+    
+}
+
+.container2 h1 {
+    margin-top: 120px;
+
+
+    font-family: "DINOT-Regular";
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    
+    text-shadow: rgba(0, 0, 0, 0) 2px 2px 2px;
+
+    letter-spacing: 0;
+    word-spacing: 2px;
+    /* color: #000000; */
+    margin-bottom: 10px;
+
+}
+
+.container2 p {
+
+font-size: 15px;
+letter-spacing: 0.2px;
+word-spacing: -1.4px;
+color: #000000;
+margin-left: 180px;
+margin-right: 180px;
+margin-top: 0%;
+font-family: "DINOT-Regular";
+
+}
+
+.Description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+.pools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "DINOT-Regular";
+}
+
+.bands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "DINOT-Regular";
+}
+
+.nature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "DINOT-Regular";
+}
+
+.Description h6{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: Bold;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.Description p{
+    
+
+    font-size: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Description img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.guest-experiences {
+    text-align: center;
+    margin: 50px 0;
+    background-color: #f0f0f0;
+    padding-top: 30px; /* Padding at the top */
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px; /* Padding at the bottom */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between cards */
+}
+
+.guest-card {
+    background: #f9f9f9; /* light background for cards */
+    border: 1px solid #ddd; /* border around cards */
+    border-radius: 8px; /* rounded corners */
+    padding: 20px; /* padding inside cards */
+    width: 250px; /* fixed width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* slight shadow for depth */
+}
+
+.rating {
+    color: #FFD700; /* gold color for stars */
+    font-size: 1.2em; /* slightly larger font for rating */
+}
+
+.guest-info {
+    margin-top: 10px; /* spacing between the quote and guest info */
+    font-size: 0.9em; /* smaller font for guest info */
+    color: #666; /* grey color for guest info */
+}
+
+.guest-card:hover{
+    transform: scale(1.05); /* slight zoom effect on hover */
+    transition: transform 0.3s; /* smooth transition for the zoom effect */
+}
+
+.footer{
+
+    display: flex;
+    background-color: #021e38;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.footer-top{
+    display: flex;
+   background-color: #021e38;
+   height: 80px;
+   width: 100%;
+    align-items: center;
+    
+    justify-content: space-around;
+}
+
+.footer-top1{
+    background-color:#021e38;
+    height: 60px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-top2{
+    background-color: #021e38;
+    height: 60px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.footer-bottom{
+    display: flex;
+    background-color:#021e38;
+    height: 80px;
+    width: 1230px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .footer-bottom p{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    
+ }
+
+
+
+
+
+.nav-footer {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-footer li {
+    margin: 0 20px; 
+}
+
+.nav-footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-footer a:hover {
+    text-decoration: underline; 
+
+}
+
+.footer-middle{
+    color: white;
+}
+
+.footer-top2 img{
+    height: 30px;
+    width: 30px; 
+    padding: 20px;
+    
+}
+
+@media (max-width: 768px) {
+
+    html ,body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        width: 100%; /* Ensure the body does not exceed the viewport width */
+         /* Include padding and borders in width calculations */
+    }
+    
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+      }
+    
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        
+    }
+
+    .container h1 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .container2 p {
+        margin: 0 20px;
+        font-size: 14px;
+    }
+
+    .Description {
+        flex-direction: column;
+        height: auto;
+        margin: 0 10px;
+    }
+
+    .Description p {
+        margin: 0 20px;
+    }
+
+    .footer-top1, .footer-top2 {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .nav-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .guest-card {
+        width: 90%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+

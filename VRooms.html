@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="css/ARooms.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ARooms.html" class="active">ROOMS</a></li>
+            <li><a href="Ameneties.html">AMENETIES</a></li>
+            
+        </ul>
+    </nav>
+
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      </script>
+
+    <div class="intro">
+        <img class="bg-image" src="villa1c.jpg" alt="Background Image">
+
+        <h1>Our Luxury Rooms</h1>
+        <p>Experience unparalleled comfort and elegance in our thoughtfully designed accommodations, where every detail has been crafted for your perfect stay.</p>
+    </div>
+
+    <nav class="navbar2">
+        <ul class="nav-links2">
+            <li><a href="ARooms.html" >All</a></li>
+            <li><a href="CRooms.html" >Cottages</a></li>
+            <li><a href="RRooms.html">Rooms</a></li>
+            <li><a href="VRooms.html" class="active">Villa</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <div class="card">
+            <img src="villaA.jpg" alt="Villa A&B" />
+            <h2>Villa A&B (Bungalow)</h2>
+            <p>👤 10 - 15 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                <li>Beds</li>
+                <li>Airconditioned</li>
+                <li>Kitchen</li>
+                <li>Tv</li>
+                <li>Own Pool & Slide</li>
+                <li>Mini Function Hall</li>
+                
+            </ul>
+            <p class="price">Php 8000</p>
+            <p>/night</p>
+        </div>
+
+        <div class="card">
+            <img src="villaC.jpg" alt="Villa C" />
+            <h2>Villa C (2 Storey)</h2>
+            <p>👤 10 - 25 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                <li>Beds</li>
+                <li>Airconditioned</li>
+                <li>Kitchen</li>
+                <li>Tv</li>
+                <li>Own Pool & Slide</li>
+                <li>Mini Function Hall</li>
+                
+            </ul>
+            <p class="price">Php 12000</p>
+            <p>/night</p>
+        </div>
+
+        <div class="card">
+            <img src="villaD.jpg" alt="Villa D" />
+            <h2>Villa D (2 Storey)</h2>
+            <p>👤 10 - 25 Guests</p>
+            
+            <h3>Villa Amenities</h3>
+            <ul>
+                <li>Access to all public pools</li>
+                <li>Beds</li>
+                <li>Airconditioned</li>
+                <li>Kitchen</li>
+                <li>Tv</li>
+                <li>Own Pool & Slide</li>
+                <li>Mini Function Hall</li>
+                
+            </ul>
+            <p class="price">Php 12000</p>
+            <p>/night</p>
+        </div>
+
+        
+
+    
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            
+            <div class="footer-top1">
+                
+                <ul class="nav-footer">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="RRooms.html" >Rooms</a></li>
+                    <li><a href="Ameneties.html">Amenities</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-top2">
+                <a href="https://www.facebook.com/gemwelladventureresort" target="_blank"><img src="facebook.png" alt="facebook" ></a>
+                <a href="https://www.instagram.com/gemwelladventureresort/" target="_blank"><img src="instagram.png" alt="instagram" ></a>
+            </div>
+        </div>
+
+        <div class="footer-middle">________________________________________________________________________________________________________________________________________________</div>
+        
+        <div class="footer-bottom">
+            <p>Copyright © 2025 Gemwell Adventure Resort. All rights reserved.
+            </p>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

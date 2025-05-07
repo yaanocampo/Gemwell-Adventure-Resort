@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="ARooms.html">ROOMS</a></li>
+            <li><a href="Ameneties.html">AMENETIES</a></li>
+            
+        </ul>
+    </nav>
+
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      </script>
+
+    <div class="container">
+        <img class="bg-image" src="bg2.jpg" alt="Background Image">
+        <h1>FIND YOUR SUMMER</h1>
+        <h1>ADVENTURE</h1>
+    </div>
+    
+
+    <div class="container2">
+        <h1>Dive Into Fun, Stay for the Adventure</h1>
+        <p>At Gemwell Resort, excitement and relaxation come together in one unforgettable getaway. With multiple pools, thrilling water slides, a fun playground for kids, and live band performances every weekend, there's something for everyone to enjoy. Surrounded by nature and good vibes, it's the perfect spot to unwind, celebrate, and make memories.</p>
+        
+    </div>
+
+    <div class="Description">
+
+        <div class="pools">
+
+            <img src="water-slide.png" alt="pools">
+
+            <h6>Epic Pools & Slides</h6>
+            <p>Dive into thrill! With multiple pools and adrenaline-pumping slides, it's the perfect place to cool off and turn your weekend into a splash party.
+
+            </p>
+
+        </div>
+
+            
+
+        <div class="bands">
+            <img src="band.png" alt="bands">
+            <h6>Live Band Weekends</h6>
+            <p>Vibes don't end at sundown — enjoy live music under the stars every weekend. Chill, dance, or sing along with your barkada to the beat of the night.</p>
+        </div>
+
+        <div class="nature">
+            <img src="mountain.png" alt="nature">
+            <h6>Wide-Open Spaces for Real Bonding</h6>
+            <p>Whether it's a picnic, outdoor games, or just lying on the grass with friends, our resort gives you room to move, laugh, and truly connect — no filters needed.</p>
+
+        </div>
+    </div>
+
+    <div class="guest-experiences">
+        <h2>Guest Experiences</h2>
+        <p>Discover what our guests have to say about their stay at Gemwell Resort.</p>
+        <div class="flex-container">
+            <div class="guest-card">
+                <span class="rating">★★★★★</span>
+                <p>"Napakaganda ng resort! Malinis ang mga kwarto at sobrang accomodating ng mga staf. Tahimik ang lugar, perfect para mag-relax. May ilang parte na kailangan pa ng maintenance, tulad ng pool area. Pero mganda ang view at maayos ang service ng staff."</p>
+                <p class="guest-info">Rivera Family<br>Capas, Tarlac</p>
+            </div>
+            <div class="guest-card">
+                <span class="rating">★★★★★</span>
+                <p>"Gemwell Resort is paradise perfected. From the moment we arrived, we felt like we stepped into a tropical escape. Our room was pristine, and the crystal clear pools offered the perfect place to relax and soak in th beauty of the surroundings."</p>
+                <p class="guest-info">Venus Family<br>San Antonio, Concepcion</p>
+            </div>
+            <div class="guest-card">
+                <span class="rating">★★★★★</span>
+                <p>"Gemwell Adventure Resort has different types of rooms and fcilities that fits all kinds of groups and needs. Whether you just want to visit for the day or stay overnight, they have options for you. It is also close to Angeles city, so it is a good place to relax and enjoy naturecwithout going too far from the city."</p>
+                <p class="guest-info">Guevarra Family<br>San Fernando city, Pampanga</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            
+            <div class="footer-top1">
+                
+                <ul class="nav-footer">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ARooms.html" >Rooms</a></li>
+                    <li><a href="Ameneties.html">Amenities</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-top2">
+                <a href="https://www.facebook.com/gemwelladventureresort" target="_blank"><img src="facebook.png" alt="facebook" ></a>
+                <a href="https://www.instagram.com/gemwelladventureresort/" target="_blank"><img src="instagram.png" alt="instagram" ></a>
+            </div>
+        </div>
+
+        <div class="footer-middle">________________________________________________________________________________________________________________________________________________</div>
+        
+        <div class="footer-bottom">
+            <p>Copyright © 2025 Gemwell Adventure Resort. All rights reserved.
+            </p>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
