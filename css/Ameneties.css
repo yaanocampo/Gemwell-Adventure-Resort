@@ -348,7 +348,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }
 .function-image img{
     width: 100%;
@@ -358,7 +358,7 @@ body {
     
 }
 .function-text {
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     
     z-index: 1;
     padding: 20px;
