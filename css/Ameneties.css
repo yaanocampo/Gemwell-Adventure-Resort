@@ -347,6 +347,8 @@ body {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
+    align-items: center;
     padding: 20px;
     background-color: rgb(255, 255, 255);
 }
