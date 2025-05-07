@@ -668,7 +668,7 @@ body {
     .container-pool,
     .playground,
     .adventure,
-    .function,
+    
     .horse-content,
     .band-content {
       flex-direction: column;
@@ -697,7 +697,15 @@ body {
       padding: 20px;
     }
 
+    .function-image{
+        display: flex;
+        justify-content: center;
+        align-items:end;
+        z-index: 1;
+    }
+
     .function-image img {
+        
         margin: unset;
         width: 100%; /* Full width for smaller screens */
         max-width: none; /* Remove max-width restriction */
@@ -708,6 +716,10 @@ body {
         flex-direction: column;
         height: auto;
         padding: 0;
+        flex-direction: column;
+        padding: 0px;
+        height: auto;
+        margin: 10px;
     }
   
     .footer {
