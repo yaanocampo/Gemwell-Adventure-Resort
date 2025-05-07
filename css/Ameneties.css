@@ -6,6 +6,11 @@ body {
     overflow-x: hidden;/* Prevents unnecessary scrolling */
 }
 
+.logo img {
+    height: 60px;
+    width: 60px; 
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -343,17 +348,19 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: red;
 }
-.function-image {
-    flex: 1;
-    background-image: url('/pic/function.jpg'); /* Replace with actual image URL */
-    background-size: cover;
-    background-position: center;
-    height: 700px;
+.function-image img{
+    width: 100%;
+    display: flex;
+    height: auto;
+    z-index: -1;
     
 }
 .function-text {
-    flex: 1;
+    background-color: aqua;
+    
+    z-index: 1;
     padding: 20px;
     max-width: 500px;
     font-family: "DINOT-Regular";
@@ -686,6 +693,19 @@ body {
     .water-slide-container {
       height: auto;
       padding: 20px;
+    }
+
+    .function-image img {
+        margin: unset;
+        width: 100%; /* Full width for smaller screens */
+        max-width: none; /* Remove max-width restriction */
+    }
+    
+
+    .function{
+        flex-direction: column;
+        height: auto;
+        padding: 0;
     }
   
     .footer {

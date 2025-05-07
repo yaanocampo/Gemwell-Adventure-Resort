@@ -327,12 +327,47 @@ body {
         padding: 0;
         overflow-x: hidden; /* Prevent horizontal scrolling */
         width: 100%; /* Ensure the body does not exceed the viewport width */
-         /* Include padding and borders in width calculations */
+        /* Include padding and borders in width calculations */
     }
     
-    .navbar, .navbar2 {
+    
+
+    .navbar {
         flex-direction: column;
         height: auto;
+        padding: 10px;
+      }
+    
+      .logo img {
+        height: 60px;
+        width: 60px;
+      }
+    
+      .nav-links {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        
+      }
+
+    .navbar2 {
+        display: flex; /* Enable Flexbox */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        width: 100%; /* Full width */
+        flex-direction: column;
+        height: auto; 
+        padding: 10px; /* Optional: Adjust padding */
+    }
+    
+    .nav-links2 {
+        display: flex; /* Enable Flexbox */
+        justify-content: center; /* Center links inside the container */
+        align-items: center; /* Center links vertically */
+        list-style: none; /* Remove default list styling */
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+        gap: 15px; /* Add spacing between links */
     }
 
     .nav-links2 a{
